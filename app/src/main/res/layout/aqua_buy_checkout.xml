@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/money_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24sp"
+        android:text="Total : Tk 1,200 "
+        android:textSize="32sp"/>
+
+    <TextView
+        android:id="@+id/method_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/money_txt"
+        android:layout_marginLeft="24sp"
+        android:textSize="24sp"
+        android:text="Selected Payment Method"/>
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18sp"
+        android:layout_marginLeft="24sp"
+        android:orientation="vertical"
+        android:layout_below="@+id/method_txt">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Card"
+            android:checked="true"
+            android:textSize="24sp"/>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PayPal"
+            android:layout_marginTop="8sp"
+            android:textSize="24sp"/>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/c3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bKash"
+            android:layout_marginTop="8sp"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="36sp"
+        android:paddingRight="36sp"
+        android:layout_marginTop="18sp"
+        android:layout_marginBottom="18sp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:text="Prooceed"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/l1"/>
+
+</RelativeLayout>

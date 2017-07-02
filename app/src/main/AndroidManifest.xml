@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unifoxdigital.tracemyfish">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Startup"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".context.NoInternet"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".signin.SignIn"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".signup.SignUp"
+            android:label="@string/app_name"/>
+
+        <activity android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <!--Aqua Site-->
+        <activity
+            android:name=".aqua.AquaTabView"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".aqua.trace.TraceSmallInfo"
+            android:label="@string/app_name"
+            android:parentActivityName=".aqua.AquaTabView"/>
+
+        <activity android:name=".aqua.trace.TraceDeatails"
+            android:label="@string/app_name"
+            android:parentActivityName=".aqua.AquaTabView"/>
+
+        <activity android:name=".aqua.buy.SingleBuyFish"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"/>
+
+
+
+        <activity
+            android:name=".aqua.buy.FarmerDetails"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".aqua.buy.FarmerList"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".aqua.buy.BuyListInfo"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".aqua.buy.Checkout"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".aqua.buy.Billing"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity
+            android:name=".aqua.buy.Shiping"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".aqua.buy.Finish"
+            android:label="@string/app_name"/>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/thank_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24sp"
+        android:text="THANK YOU"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/second_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4sp"
+        android:layout_below="@+id/thank_you"
+        android:text="For Ordering !"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:id="@+id/third_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48sp"
+        android:text="Your Order ID"
+        android:textSize="32sp"
+        android:layout_below="@+id/second_line"/>
+
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XXX123"
+        android:textSize="32sp"
+        android:layout_marginTop="4sp"
+        android:paddingLeft="32sp"
+        android:paddingRight="32sp"
+        android:background="@android:color/white"
+        android:layout_below="@id/third_line"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_id"
+        android:paddingLeft="32sp"
+        android:paddingRight="32sp"
+        android:layout_marginTop="48sp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="Home" />
+
+
+</RelativeLayout>

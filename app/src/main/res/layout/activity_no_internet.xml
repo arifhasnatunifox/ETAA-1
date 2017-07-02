@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <ImageView
+        android:id="@+id/no_net_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24sp"
+        android:src="@drawable/no_internet_img"/>
+
+    <TextView
+        android:id="@+id/wp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/no_net_img"
+        android:text="Whoops!"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/wp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_margin="16sp"
+        android:layout_below="@+id/wp"
+        android:textAlignment="center"
+        android:text="No Internet Connection.\n Tap Image to Retry.."
+        android:textColor="@android:color/white"
+        android:textSize="24sp"/>
+
+
+</RelativeLayout>

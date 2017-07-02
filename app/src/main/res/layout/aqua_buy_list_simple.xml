@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="42sp">
+
+    <TextView
+        android:id="@+id/i1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="true"
+        android:text="From Farmer"
+        android:textSize="24sp"
+        android:layout_margin="8sp"/>
+
+    <TextView
+        android:id="@+id/i2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="true"
+        android:layout_below="@+id/i1"
+        android:text="Cluster"
+        android:textSize="24sp"
+        android:layout_margin="8sp"/>
+    <TextView
+        android:id="@+id/i3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="true"
+        android:layout_below="@+id/i2"
+        android:layout_margin="8sp"
+        android:text="Processing Plant"
+        android:textSize="24sp"/>
+
+</RelativeLayout>

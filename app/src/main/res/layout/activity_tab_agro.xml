@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/trace_aqua"
+        android:layout_width="320sp"
+        android:layout_height="80sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18sp"
+        android:text="Trace My Agro"
+        android:textSize="24sp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buy_aqua"
+        android:layout_width="320sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="18sp"
+        android:layout_below="@+id/trace_aqua"
+        android:layout_centerHorizontal="true"
+        android:text="Buy My Agro"
+        android:textSize="24sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/track_auqa"
+        android:layout_width="320sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="18sp"
+        android:layout_below="@+id/buy_aqua"
+        android:layout_centerHorizontal="true"
+        android:text="Track My Vessel"
+        android:textSize="24sp"/>
+
+    <!--<include layout="@layout/footer_activity"/>-->
+
+</RelativeLayout>
